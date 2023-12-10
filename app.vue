@@ -1,7 +1,11 @@
 <template>
   <div>
-    <!-- <NuxtPage></NuxtPage> -->
-    Hello world
+    <NuxtPage></NuxtPage>
+
+    <!-- calling component with parent Folder-->
+    <HomeWelcome />
+    <!-- calling component -->
+    <Counter></Counter> 
     <!-- <NuxtWelcome /> -->
   </div>
 </template>
