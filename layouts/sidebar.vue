@@ -1,6 +1,6 @@
 <template>
 
-    <main class="userLayout">
+    <main class="bg-gray-500">
         <article class="sideBar">
             <p>Dashboard</p>
             <p>settings</p>
