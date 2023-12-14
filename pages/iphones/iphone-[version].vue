@@ -3,7 +3,7 @@
         <div class="flex justify-center w-full mt-20">
             <div class="grid grid-cols-2">
                 <div>
-                <img :src="`/images/iphone${route.params.version}.jpg`" />
+                <img :src="`/images/iphone-${route.params.version}.jpg`" />
                 </div>
                 <div class="text-center">
                 <h1 class="text-3xl">Iphone {{ version }}</h1>
