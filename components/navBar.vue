@@ -5,6 +5,7 @@
             <NuxtLink class="mr-4" to="/about">About</NuxtLink>
             <NuxtLink class="mr-4" to="/iphones">IPhones</NuxtLink>
             <p> Cart ({{  cart.length }})</p>
+            <p> Total Pages Visited : {{  totalRouteCount }}</p>
         </div>
 
         <div v-if="auth.isAuthenticated" >
@@ -20,6 +21,7 @@
 <script setup>
     const cart = useCart();
     const auth = useAuth();
+    const  totalRouteCount = usePageVisitCount();
 
     function logout(){
         auth.value.isAuthenticated = false;

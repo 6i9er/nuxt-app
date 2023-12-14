@@ -7,8 +7,9 @@
     <slot></slot>
 </template>
 
-<script >
+<script setup>
 definePageMeta({
     layout:"sidebar",
+    middleware: ['auth'],
 });
 </script>
