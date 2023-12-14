@@ -9,4 +9,9 @@ today i finish
     => change nav bar 
     =>fetch data 
     => use authstate
+    => middleware
+        => on page only 
+        => create file on middlewares folder 
+        => create global file on middlewares folder (.global)
+        
     
