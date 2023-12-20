@@ -2,7 +2,8 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@sidebase/nuxt-session'
   ],
   css: ['assets/css/tailwind.css'],
   app: {

@@ -80,6 +80,9 @@ async function onSubmit(){
 
     isLoading.value = true;
 
+    const { session, refresh, update, reset } = await useSession();
+    alert(session.value.id);
+    console.log(session.value);
     const {data,error} = await useFetch(url, {
         method:'post',
         body:form
@@ -94,6 +97,8 @@ async function onSubmit(){
     }
     
     const auth = useAuth();
+    await update({ isAuthenticated: true });
+    await refresh()
     auth.value.isAuthenticated = true;
     navigateTo('/');
 

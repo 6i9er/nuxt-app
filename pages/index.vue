@@ -9,6 +9,16 @@
 </template>
 
 <script setup>
+
+
+    
+
+    import { onMounted } from 'vue';
+
+    
+    
+
+
     function navigateToAnotherPage(pageName){
         navigateTo(pageName);
     }

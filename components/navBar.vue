@@ -21,9 +21,13 @@
 <script setup>
     const cart = useCart();
     const auth = useAuth();
+    const { session, refresh, update, reset } = await useSession();
+
     const  totalRouteCount = usePageVisitCount();
 
     function logout(){
         auth.value.isAuthenticated = false;
+         update({ isAuthenticated: false });
+         refresh()
     }
 </script>
